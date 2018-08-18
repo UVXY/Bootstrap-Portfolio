@@ -16,12 +16,13 @@ p {
     margin-bottom: 20px;
 }
 
-
 p:last-child {
     margin-bottom: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
     font-weight: 700;
@@ -32,15 +33,6 @@ h1 {
     font-size: 30px;
     line-height: 49px;
     border-bottom: 3px solid #ddd;
-}
-
-.main-img {
-    float: left;
-    width: 600px;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    margin-right: 10px
 }
 
 /* 
@@ -60,7 +52,7 @@ h1 {
 
 #logo {
     float: left;
-    width: 250px;
+    width: 300px;
     height: 90px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -71,12 +63,6 @@ h1 {
     text-decoration: none;
     background: #4aaa4a;
 }
-
-.mt-0 {
-    margin-top: 0 !important;
-}
-
-
 
 /* 
 main 
@@ -154,13 +140,4 @@ footer {
     background-color: #666;
     border-top: 8px solid #4aaa4a;
     height: 50px;
-}
-
-/*
- * main
-*/
-
-#main-container {
-    padding-top: 130px;
-    min-height: calc(100vh - 70px);
 }
