@@ -5,11 +5,26 @@ body {
     background-color: blanchedalmond;
 }
 
+/*
+ *general
+*/
+
 h1,
 h2,
 h3,
 p {
     margin-bottom: 20px;
+}
+
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-weight: 700;
 }
 
 h1 {
@@ -28,43 +43,19 @@ h1 {
     margin-right: 10px
 }
 
-p:last-child {
-    margin-bottom: 0;
-}
-
 /* 
  * header
 */
-nav {
-    float: right;
-    margin-top: 25px;
-}
 
-mav a {
-    display: inline-block;
-    padding-left: 15px;
-    margin-left: 15px;
-    line-height: 18px;
-    color: #999;
-    text-decoration: none;
-    border-left: 1px solid #efefef;
-}
-
-nav a:first-child {
-    border-left: 0 none;
-}
-
-textarea {
-    height: 200px;
-}
-
-nav a :first-child {
-    border-left: 0 none;
-}
-
-#main-container {
-    padding-top: 130px;
-    min-height: calc(100vh - 70px);
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
 }
 
 #logo {
@@ -85,16 +76,7 @@ nav a :first-child {
     margin-top: 0 !important;
 }
 
-#masthead {
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: auto;
-    color: #fff;
-    background: #fff;
-    border-bottom: 2px solid #ccc;
-}
+
 
 /* 
 main 
@@ -122,6 +104,46 @@ main
     clear: both;
 }
 
+/*
+ * portfolio 
+*/
+
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    height: 202px;
+    overflow: auto;
+}
+
+.work:nth-child(even) {
+    margin-right: 40px;
+}
+
+.work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaa4a;
+    border-bottom: 0;
+}
+
+/*
+ * footer
+*/
+
 footer {
     padding: 30px;
     clear: both;
@@ -132,4 +154,13 @@ footer {
     background-color: #666;
     border-top: 8px solid #4aaa4a;
     height: 50px;
+}
+
+/*
+ * main
+*/
+
+#main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
 }
