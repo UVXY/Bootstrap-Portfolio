@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     font-size: 18px;
     line-height: #777;
-    background-color: blanchedalmond;
 }
 
 /*
@@ -13,6 +14,8 @@ h1,
 h2,
 h3,
 p {
+    /* font-family: Consolas, monaco, monospace; */
+    font-family: avenir next, avenir, sans-serif;
     margin-bottom: 20px;
 }
 
@@ -23,8 +26,8 @@ p:last-child {
 h1,
 h2,
 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
+    font-family: avenir;
+    color: #18bfef;
     font-weight: 700;
 }
 
@@ -42,26 +45,15 @@ h1 {
 #masthead {
     position: fixed;
     z-index: 99;
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: auto;
-    color: #fff;
-    background: #fff;
-    border-bottom: 2px solid #ccc;
 }
 
 #logo {
-    float: left;
-    width: 300px;
-    height: 90px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    background: #4aaa4a;
+    font-family: "Carter One";
+    font-size: 24px;
+    /* font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px; */
 }
 
 /* 
@@ -69,14 +61,19 @@ main
 */
 
 #main-container {
-    padding-top: 130px;
-    min-height: calc(100vh - 70px)
+    min-height: calc(100vh - 70px);
+    position: absolute;
+
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 50px #5E5E5E;
 }
 
 .main-section {
-    float: left;
     width: 100%;
-    max-width: 960px;
     padding: 30px;
     margin: 0 0 40px;
     background: #fff;
@@ -96,7 +93,7 @@ main
 
 .work {
     position: relative;
-    float: left;
+    float: right;
     width: 274px;
     height: 202px;
     overflow: auto;
@@ -122,7 +119,7 @@ main
     line-height: 30px;
     color: #fff;
     text-align: center;
-    background: #4aaa4a;
+    background: #18bfef;
     border-bottom: 0;
 }
 
@@ -134,10 +131,45 @@ footer {
     padding: 30px;
     clear: both;
     font-size: 12px;
-    color: #fff;
-    color: #777;
+    /* color: #fff;
+    color: #777; */
     text-align: center;
     background-color: #666;
-    border-top: 8px solid #4aaa4a;
+    border-top: 8px solid #2b6879;
     height: 50px;
+}
+
+/* 
+ * responsive
+*/
+
+@media screen and (max-width: 768px) {
+    .work {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    #logo {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+    }
+
+    input[type=submit] {
+        width: 100%;
+    }
 }
