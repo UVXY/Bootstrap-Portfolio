@@ -73,6 +73,7 @@ nav {
 }
 
 .main-section {
+    margin: 0 auto;
     width: 100%;
     padding: 30px;
     margin: 0 0 40px;
@@ -94,8 +95,8 @@ nav {
 .work {
     position: relative;
     float: right;
-    width: 274px;
-    height: 202px;
+    width: 374px;
+    height: 302px;
     overflow: auto;
 }
 
