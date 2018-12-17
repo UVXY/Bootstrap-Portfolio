@@ -168,4 +168,7 @@ footer {
     input[type=submit] {
         width: 100%;
     }
+    #main-container {
+        padding-top: 50px;
+    }
 }
